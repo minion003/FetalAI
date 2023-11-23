@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="frontpage.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script src="script.js" defer></script>
+    <title>FetalAI</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>FetalAI</h1>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#about-us-section">About Us</a></li>
+                <li><a href="#prediction-section">Predict</a></li>
+                <li><a href="#" onclick="openBeneficiaryAdvices()">Beneficiary Advices</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="predict-button">
+        <a href="{{ url_for('index') }}">Predict Foetal Health</a>
+    </div>
+    
+
+    <div id="about-us-section">
+        <h2>What is FetalAI?</h2>
+        <p>FetalAI is a cutting-edge technology that utilizes artificial intelligence to predict and monitor the health of the foetus during pregnancy. It analyzes various parameters and provides valuable insights to healthcare professionals, ensuring better maternal and fetal care.</p>
+
+        <h2>Importance of FetalAI</h2>
+        <p>FetalAI plays a crucial role in early detection of potential issues, allowing for timely intervention and improved outcomes. By harnessing the power of AI, FetalAI enhances the accuracy of predicting fetal health, contributing to the overall well-being of both the mother and the unborn child.</p>
+    </div>
+
+    <section>
+        <div class="team-member" onclick="redirectToGitHub('https://github.com/minion003')">
+            <img src="{{ url_for('static', filename='ankit.jpg') }}" alt="ankit" class="profile-picture">
+            <h2>Ankit K</h2>
+        </div>
+    
+        <div class="team-member" onclick="redirectToGitHub('https://github.com/SirasanagandlaMadhuri')">
+            <img src="{{ url_for('static', filename='madhuri.jpg') }}" alt="madhuri" class="profile-picture">
+            <h2>S Madhuri</h2>
+        </div>
+
+        <div class="team-member" onclick="redirectToGitHub('https://github.com/AmarnathChigurupati')">
+            <img src="{{ url_for('static', filename='amarnath.jpg') }}" alt="amarnath" class="profile-picture">
+            <h2>Ch Amarnath</h2>
+        </div>
+
+        <div class="team-member" onclick="redirectToGitHub('https://github.com/sikhakollisurya')">
+            <img src="{{ url_for('static', filename='surya.png') }}" alt="surya" class="profile-picture">
+            <h2>S Surya</h2>
+        </div>
+        
+    </section>
+
+</body>
+
+</html>
